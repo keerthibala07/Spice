@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="order.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Form</title>
+     <script type="text/javascript">
+      function validateForm() {
+      
+      var x=document.forms["myForm"]["name"].value;
+      if (x==null || x=="")
+       {
+        alert("Name must be filled out");
+        return false;
+       }
+      
+      var y=document.forms["myForm"]["password"].value;
+      if (y==null || y=="") {
+        alert("Card number must be filled out");
+        return false;
+      }
+      var a=document.forms["myForm"]["dob"].value;
+      if (a==null || a=="")
+       {
+        alert("CVV number must be filled out");
+        return false;
+       }
+       else if(a.length!=4)
+       {
+        alert("CVV number must be of 4 digit")
+       }
+      
+      var b=document.forms["myForm"]["age"].value;
+      if (b==null || b=="") {
+        alert("Card expiry date must be filled out");
+        return false;
+      }
+      
+      var c=document.forms["myForm"]["cn"].value;
+      if (c==null || c=="")
+       {
+        alert("Branch must be filled out");
+        return false;
+       }
+      
+      
+      
+       }
+      
+      
+      
+      </script>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">READY TO ORDER!!</div>
+    <div class="content">
+      <form name="myForm"  onsubmit="return validateForm()" method="get">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">NAME</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">EMAIL</span>
+            <input type="text" placeholder="Enter your Email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">SPICE TYPE</span>
+            <select name="wgtmsr" id="wgtmsr" style="width: 300px; height: 47px;">
+              <option value="kg">Indian</option>
+              <option value="gm">Continental</option>
+              <option value="kg">Exotic</option>
+              <option value="gm">Other varieties</option>
+            </select>
+            
+          </div>
+          <div class="input-box">
+            <span class="details">PARTICULAR SPICE</span>
+            <input type="text" placeholder="Enter particular spice" required>
+          </div>
+          <div class="input-box">
+            <span class="details">QUANTITY</span>
+            <input type="text" placeholder="Enter quantity needed" required>
+          </div>
+          <div class="input-box">
+            <span class="details">MODE OF PAYMENT</span>
+            <select name="wgtmsr" id="wgtmsr" style="width: 300px; height: 47px;">
+              <option value="kg">online</option>
+              <option value="gm">Cash on delivery</option>
+            </select>
+            
+          </div>
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="ORDER">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

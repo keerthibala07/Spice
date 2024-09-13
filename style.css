@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    height: 100%;
+}
+.menu-btn{
+    color: #424144;
+    font-size:23px;
+    cursor:pointer;
+    display:none;
+
+}
+
+.navbar{
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0%;
+    z-index:999;
+    background-color:#f3f4f6;
+    box-shadow:0 0 14px rgba(0,0,0,0.3);
+
+}
+
+.navbar .logo h1{
+   color:#424144;
+   border-bottom:4px solid #9b59b6;
+
+}
+
+.navbar .menu li{
+    list-Style:none;
+    display:inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left:20px;
+    color:#424144;
+    border-bottom:4px solid transparent;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+.navbar .menu li .active{
+    border-bottom: 4px solid #9b59b6;
+}
+.navbar .menu li a i{
+    color:#9b59b6;
+}
+
+.navbar .menu li a:hover {
+   border-bottom: 4px solid #9b59b6;
+}
+
+.content{
+    background: url("spices.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:0 5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    color:white;
+    height: 100vh;
+}
+
+.content h1{
+    font-size:40px;
+
+}
+
+.content p{
+    font-size:20px;
+    margin-top:20px;
+}
+.content button{
+      margin-top:30px;
+      padding:15px 30px;
+      border:none;
+      background: #9b59b6;
+      color:white;
+      font-size:20px;
+      border-radius:5px;
+      cursor:pointer;
+
+}
+.con{
+    background-image: url("https://img.freepik.com/free-photo/top-view-set-spices-herbs-tea-rose-buds-red-chili-pepper-flakes-black-peppercorns-anise-seeds-clove-black-background-with-copy-space_141793-9309.jpg?w=1060&t=st=1683811840~exp=1683812440~hmac=2f16cbb37d4a522a7a7485a8aee6762fa2d08afd755b02ac136edb82ed36a5ef");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:0 5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    color:white;
+    height: 100vh;
+    
+}
+
+.pheading{
+    text-align:center;
+    margin:50px 0;
+    color:#424144; 
+}
+ 
+.sec{
+    padding:10px 5%;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.products .card{
+    width:310px;
+    background:#f5f5f5;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    border-radius:5px;
+    padding:5px;
+    margin-bottom:20px;
+}
+.products .card1{
+    width:400px;
+    background:#f5f5f5;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    border-radius:5px;
+    padding:5px;
+    margin-bottom:20px;
+}
+.products .card img{
+    height:250px;
+    width:100%;
+
+}
+.products .card .desc{
+    padding: 5px 20px;
+    opacity:0.8;
+}
+.products .card .title{
+    font-weight:900;
+    font-size:20px;
+    color:#424144;
+    padding:0 20px;
+}
+.products .card .box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px;
+
+}
+
+.products .card .box .price{
+    color:#9b59b6;
+    font-size:20px;
+    font-weight:bold;
+
+}
+.products .card .box .btn{
+    font-size:13px;
+    color:#9b59b6;
+    padding:10px 18px;
+    font-weight:900;
+    border:1px solid #9b59b6;
+    border-radius:20px;
+
+}
+
+.products .card .box .btn:hover{
+    cursor:pointer;
+    background-color:#9b59b6;
+    color:white; 
+}
+ #footer{
+    width: 100%;    
+    background-color:#9b59b6;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #9b59b6;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: #9b59b6;
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: #9b59b6;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
